@@ -22,7 +22,7 @@ function Card({id , image , info , price , name , removeTour})
         <div className="card w-[400px] min-h-max m-4 p-4 flex flex-col rounded-[10px] items-center  shadow-card-shadow ">
 
             {/* CARD KI IMAGE */}
-            <img src={image} className="w-[380px] object-cover aspect-square" />
+            <img src={image} alt={name} className="w-[380px] object-cover aspect-square" />
 
             <div className="tour-info mx-[20px] my-[5px] ">
 
