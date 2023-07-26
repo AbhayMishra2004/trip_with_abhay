@@ -9,7 +9,7 @@ const App = () => {
     const[tours , setTours] = useState(data) ;
 
     // AGAR 0 CARD HO JAYE TO , REFRESH BUTTON 
-    if(tours.length == 0)
+    if(tours.length === 0)
     {
         return (
 
@@ -27,7 +27,7 @@ const App = () => {
     // FOR REMOVEING THE TOURS 
     function removeTour(id)
     {
-        const newTours = tours.filter(tour => tour.id != id) ; 
+        const newTours = tours.filter(tour => tour.id !== id) ; 
         setTours(newTours) ; 
     }
 
